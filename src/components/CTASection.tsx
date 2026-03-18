@@ -9,11 +9,11 @@ export default function CTASection({ className }: { className?: string }) {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&q=80&w=2000"
-              alt="Community"
-              className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=2000"
+              alt="Tech Career"
+              className="w-full h-full object-cover opacity-50 scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/90 via-neutral-900/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/80 via-neutral-900/50 to-neutral-900/20" />
           </div>
 
           <div className="relative z-10 p-12 md:p-24 max-w-3xl flex flex-col items-start">

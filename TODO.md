@@ -1,8 +1,8 @@
-# TODO: Remove current dynamic logo and replace with static AfriNex.png
+# Task: Add background image to "Ready to advance your tech career?" card
 
-## Steps:
-- [x] Step 1: Remove import and <Logo /> from src/components/Navbar.tsx, replace with static img src="/src/AfriNex.png"
-- [x] Step 2: Remove import and <Logo /> from src/components/Footer.tsx, replace with static img src="/src/AfriNex.png"
-- [x] Step 3: Delete src/components/Logo.tsx entirely
-- [x] Step 4: Verify no other usages (search if needed)
-- [x] Step 5: Test the site (npm run dev, check Navbar/Footer)
+## Plan Steps
+- [x] Understand files (Hero.tsx, Home.tsx, CTASection.tsx read)
+- [x] Brainstorm and confirm plan with user
+- [x] Edit src/components/CTASection.tsx (update image + styling)
+- [x] Test changes (run dev server at http://localhost:3000; fixed visibility: opacity-50, lighter gradient, no mix-blend – verify CTA section at home page bottom)
+- [x] Complete task
