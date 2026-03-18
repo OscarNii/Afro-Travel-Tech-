@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Globe, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { useTheme } from './ThemeProvider';
+import Logo from './Logo';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,9 +41,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center text-white group-hover:bg-amber-700 transition-colors">
-            <Globe className="w-6 h-6" />
-          </div>
+          <Logo className="w-10 h-10 group-hover:opacity-90 transition-opacity" />
           <span className={cn(
             "font-semibold text-xl tracking-tight transition-colors",
             isScrolled ? "text-neutral-900 dark:text-white" : "text-white drop-shadow-md"
@@ -57,14 +56,14 @@ export default function Navbar() {
             "text-sm font-medium transition-colors hover:text-amber-500",
             isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
           )}>Explore</Link>
-          <Link to="/cities" className={cn(
+          <a href="/#featured-destinations" className={cn(
             "text-sm font-medium transition-colors hover:text-amber-500",
             isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>Cities</Link>
-          <Link to="/community" className={cn(
+          )}>Featured Destinations</a>
+          <Link to="/explore" className={cn(
             "text-sm font-medium transition-colors hover:text-amber-500",
             isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>Community</Link>
+          )}>View all experiences</Link>
           
           <button 
             onClick={toggleTheme}
@@ -83,9 +82,12 @@ export default function Navbar() {
             )}
           </button>
 
-          <button className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg shadow-amber-600/20 hover:shadow-amber-600/40">
-            Sign In
-          </button>
+          <a 
+            href="#contact"
+            className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg shadow-amber-600/20 hover:shadow-amber-600/40"
+          >
+            Contact
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -124,11 +126,15 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-neutral-950 shadow-xl border-t border-neutral-100 dark:border-neutral-800 flex flex-col p-6 gap-4">
           <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Explore</Link>
-          <Link to="/cities" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Cities</Link>
-          <Link to="/community" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Community</Link>
-          <button className="bg-amber-600 text-white px-6 py-3 rounded-xl text-base font-medium mt-4">
-            Sign In
-          </button>
+          <a href="/#featured-destinations" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Featured Destinations</a>
+          <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>View all experiences</Link>
+          <a 
+            href="#contact"
+            className="bg-amber-600 text-white px-6 py-3 rounded-xl text-base font-medium mt-4 text-center"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Contact
+          </a>
         </div>
       )}
     </nav>

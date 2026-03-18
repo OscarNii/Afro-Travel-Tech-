@@ -1,0 +1,49 @@
+import { GoogleGenAI } from "@google/genai";
+import fs from "fs";
+import path from "path";
+
+async function generateLogo() {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    console.error("GEMINI_API_KEY is not set.");
+    process.exit(1);
+  }
+
+  const ai = new GoogleGenAI({ apiKey });
+  
+  try {
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash-image',
+      contents: {
+        parts: [
+          {
+            text: 'A unique, modern, minimalist logo for Afro Travel Europe. It should combine African cultural motifs with travel elements like a globe or plane, using warm amber and earth tones. Clean vector style, white background, high quality, professional.',
+          },
+        ],
+      },
+      config: {
+        imageConfig: {
+          aspectRatio: "1:1",
+        }
+      },
+    });
+
+    for (const part of response.candidates[0].content.parts) {
+      if (part.inlineData) {
+        const base64EncodeString = part.inlineData.data;
+        const buffer = Buffer.from(base64EncodeString, 'base64');
+        const publicDir = path.join(process.cwd(), 'public');
+        if (!fs.existsSync(publicDir)) {
+          fs.mkdirSync(publicDir);
+        }
+        fs.writeFileSync(path.join(publicDir, 'logo.png'), buffer);
+        console.log('Logo generated successfully!');
+        break;
+      }
+    }
+  } catch (error) {
+    console.error('Error generating logo:', error);
+  }
+}
+
+generateLogo();

@@ -1,6 +1,7 @@
-import { Globe, Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '../lib/utils';
+import Logo from './Logo';
 
 export default function Footer({ className }: { className?: string }) {
   return (
@@ -9,9 +10,7 @@ export default function Footer({ className }: { className?: string }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
           <div className="flex flex-col gap-6">
             <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center text-white group-hover:bg-amber-700 transition-colors">
-                <Globe className="w-6 h-6" />
-              </div>
+              <Logo className="w-10 h-10 group-hover:opacity-90 transition-opacity" />
               <span className="font-bold text-2xl tracking-tight text-white">
                 Afro Travel
               </span>
@@ -37,7 +36,7 @@ export default function Footer({ className }: { className?: string }) {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold text-lg mb-4 tracking-wide uppercase">Explore</h4>
-            <Link to="/cities" className="hover:text-amber-500 transition-colors">Destinations</Link>
+            <a href="/#featured-destinations" className="hover:text-amber-500 transition-colors">Destinations</a>
             <Link to="/experiences" className="hover:text-amber-500 transition-colors">Experiences</Link>
             <Link to="/events" className="hover:text-amber-500 transition-colors">Events</Link>
             <Link to="/tours" className="hover:text-amber-500 transition-colors">Tours</Link>

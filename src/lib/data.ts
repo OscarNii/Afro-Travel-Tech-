@@ -50,6 +50,36 @@ export const trendingExperiences: Experience[] = [
     reviews: 156,
     tag: 'Tours',
     image: 'https://images.unsplash.com/photo-1518998053401-878c730c5e69?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 't-6',
+    title: 'Afro-Tech Innovation Summit',
+    location: 'London, UK',
+    price: 150,
+    rating: 4.9,
+    reviews: 320,
+    tag: 'Events',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 't-7',
+    title: 'Black Founders Networking Gala',
+    location: 'Paris, France',
+    price: 120,
+    rating: 4.8,
+    reviews: 215,
+    tag: 'Events',
+    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    id: 't-8',
+    title: 'Future of Tech Panel & Mixer',
+    location: 'Berlin, Germany',
+    price: 85,
+    rating: 4.7,
+    reviews: 180,
+    tag: 'Events',
+    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800',
   }
 ];
 
@@ -110,6 +140,30 @@ export const featuredCities: City[] = [
     name: 'Amsterdam',
     image: 'https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?auto=format&fit=crop&q=80&w=800',
     experienceCount: 53,
+  },
+  {
+    id: 'c5',
+    name: 'Lisbon',
+    image: 'https://images.unsplash.com/photo-1585214582618-971751221126?auto=format&fit=crop&q=80&w=800',
+    experienceCount: 47,
+  },
+  {
+    id: 'c6',
+    name: 'Brussels',
+    image: 'https://images.unsplash.com/photo-1559564484-e48b3e040ff4?auto=format&fit=crop&q=80&w=800',
+    experienceCount: 38,
+  },
+  {
+    id: 'c7',
+    name: 'Madrid',
+    image: 'https://images.unsplash.com/photo-1539037116277-4db20202af70?auto=format&fit=crop&q=80&w=800',
+    experienceCount: 42,
+  },
+  {
+    id: 'c8',
+    name: 'Milan',
+    image: 'https://images.unsplash.com/photo-1520440229-6469a149ac59?auto=format&fit=crop&q=80&w=800',
+    experienceCount: 35,
   }
 ];
 

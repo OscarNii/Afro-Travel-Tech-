@@ -54,9 +54,12 @@ export default function ExperienceCard({ experience, className }: ExperienceCard
             <span className="text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wider">From</span>
             <span className="text-lg font-bold text-neutral-900 dark:text-white">€{experience.price}</span>
           </div>
-          <button className="text-sm font-semibold text-amber-600 dark:text-amber-500 hover:text-amber-700 dark:hover:text-amber-400 bg-amber-50 dark:bg-amber-500/10 hover:bg-amber-100 dark:hover:bg-amber-500/20 px-4 py-2 rounded-full transition-colors">
+          <a 
+            href="/#contact"
+            className="text-sm font-semibold text-amber-600 dark:text-amber-500 hover:text-amber-700 dark:hover:text-amber-400 bg-amber-50 dark:bg-amber-500/10 hover:bg-amber-100 dark:hover:bg-amber-500/20 px-4 py-2 rounded-full transition-colors inline-block text-center"
+          >
             Book Now
-          </button>
+          </a>
         </div>
       </div>
     </div>

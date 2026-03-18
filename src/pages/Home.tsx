@@ -6,6 +6,7 @@ import CategoryGrid from '../components/CategoryGrid';
 import FeaturedCities from '../components/FeaturedCities';
 import Testimonials from '../components/Testimonials';
 import CTASection from '../components/CTASection';
+import ContactSection from '../components/ContactSection';
 import { trendingExperiences, recommendedExperiences } from '../lib/data';
 
 export default function Home() {
@@ -70,6 +71,7 @@ export default function Home() {
       </section>
 
       <Testimonials />
+      <ContactSection />
       <CTASection />
     </main>
   );
