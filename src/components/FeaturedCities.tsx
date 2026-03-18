@@ -9,14 +9,14 @@ export default function FeaturedCities({ className }: { className?: string }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight leading-tight">
-              Featured Destinations
+              Featured Tech Hubs
             </h2>
             <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light">
-              Explore the most vibrant Afro-centric hubs across Europe. From the streets of London to the nightlife of Berlin.
+              Explore top tech hubs across Europe hosting conferences, meetups, and hands-on labs.
             </p>
           </div>
           <button className="flex items-center gap-2 text-amber-600 dark:text-amber-500 font-semibold hover:text-amber-700 dark:hover:text-amber-400 transition-colors group whitespace-nowrap">
-            View all cities
+            View all hubs
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
@@ -45,7 +45,7 @@ export default function FeaturedCities({ className }: { className?: string }) {
                     {city.name}
                   </h3>
                   <p className="text-amber-400 font-medium text-lg opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500 delay-100">
-                    {city.experienceCount} Experiences
+                    {city.experienceCount} Sessions
                   </p>
                 </div>
               </div>

@@ -18,20 +18,20 @@ export default function CTASection({ className }: { className?: string }) {
 
           <div className="relative z-10 p-12 md:p-24 max-w-3xl flex flex-col items-start">
             <span className="inline-block py-1.5 px-4 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-400 text-sm font-bold tracking-widest uppercase mb-8 backdrop-blur-md">
-              Join the Movement
+              Join the Conference
             </span>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
-              Ready to experience Europe differently?
+              Ready to advance your tech career?
             </h2>
             <p className="text-xl text-neutral-300 mb-12 font-light max-w-xl leading-relaxed">
-              Connect with the diaspora, discover hidden gems, and create memories that last a lifetime.
+              Join innovators in cloud engineering, cybersecurity, and DevOps—learn from experts and build connections.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-xl shadow-amber-600/20 hover:shadow-amber-600/40 hover:-translate-y-1">
-                Join the Community <ArrowRight className="w-5 h-5" />
+                Register Now <ArrowRight className="w-5 h-5" />
               </button>
               <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 hover:-translate-y-1">
-                Host an Experience
+                Sponsor or Speak
               </button>
             </div>
           </div>

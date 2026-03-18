@@ -17,7 +17,7 @@ async function generateLogo() {
       contents: {
         parts: [
           {
-            text: 'A unique, modern, minimalist logo for Afro Travel Europe. It should combine African cultural motifs with travel elements like a globe or plane, using warm amber and earth tones. Clean vector style, white background, high quality, professional.',
+            text: 'A unique, modern, minimalist logo for AfriNex. It should feel professional and tech-forward, combining subtle conference or cloud motifs with a clean vector style and modern neutral + amber accents. White background, high quality, professional.',
           },
         ],
       },

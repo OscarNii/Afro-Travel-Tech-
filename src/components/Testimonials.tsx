@@ -7,7 +7,7 @@ export default function Testimonials({ className }: { className?: string }) {
     <section className={cn("py-24 bg-neutral-50 dark:bg-neutral-950", className)}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-16 text-center tracking-tight">
-          Stories from the Community
+          Attendee Feedback
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

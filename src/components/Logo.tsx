@@ -9,7 +9,7 @@ interface LogoProps {
 
 export default function Logo({ className }: LogoProps) {
   const [logoUrl, setLogoUrl] = useState<string | null>(() => {
-    return localStorage.getItem('afro-travel-logo');
+    return localStorage.getItem('tech-driven-logo');
   });
   const [isGenerating, setIsGenerating] = useState(false);
 
@@ -25,7 +25,7 @@ export default function Logo({ className }: LogoProps) {
           contents: {
             parts: [
               {
-                text: 'A unique, modern, minimalist logo for Afro Travel Europe. It should combine African cultural motifs with travel elements like a globe or plane, using warm amber and earth tones. Clean vector style, white background, high quality, professional.',
+                text: 'A unique, modern, minimalist logo for AfriNex. It should feel professional and tech-forward, combining subtle conference or cloud motifs with a clean vector style, using modern neutral and amber accent colors. White background, high quality, professional.',
               },
             ],
           },
@@ -41,7 +41,7 @@ export default function Logo({ className }: LogoProps) {
           if (part.inlineData) {
             const base64 = `data:image/png;base64,${part.inlineData.data}`;
             setLogoUrl(base64);
-            localStorage.setItem('afro-travel-logo', base64);
+            localStorage.setItem('tech-driven-logo', base64);
             break;
           }
         }
@@ -58,10 +58,10 @@ export default function Logo({ className }: LogoProps) {
   if (logoUrl) {
     return (
       <img 
-        src={logoUrl} 
-        alt="Afro Travel Logo" 
-        className={cn("object-cover rounded-full", className)} 
-      />
+          src={logoUrl} 
+          alt="AfriNex Logo" 
+          className={cn("object-cover rounded-full", className)} 
+        />
     );
   }
 

@@ -9,10 +9,10 @@ export default function ContactSection({ className }: { className?: string }) {
           {/* Contact Info */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight leading-tight">
-              Get in Touch
+              Contact & Partnerships
             </h2>
             <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light mb-12 max-w-lg">
-              Have questions about an experience or want to partner with us? We'd love to hear from you.
+              Questions about speaking, sponsoring, or partnering? Reach out to our team.
             </p>
 
             <div className="space-y-8">
@@ -22,8 +22,8 @@ export default function ContactSection({ className }: { className?: string }) {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-neutral-900 dark:text-white mb-1">Email Us</h4>
-                  <p className="text-neutral-600 dark:text-neutral-400">hello@afrotraveleurope.com</p>
-                  <p className="text-neutral-600 dark:text-neutral-400">support@afrotraveleurope.com</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">info@techdrivencorelations.com</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">partnerships@techdrivencorelations.com</p>
                 </div>
               </div>
 

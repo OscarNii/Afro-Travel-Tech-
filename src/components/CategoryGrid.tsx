@@ -2,11 +2,11 @@ import { Music, Utensils, Map, Users, CalendarDays } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const categories = [
-  { id: 'food', label: 'Food & Dining', icon: Utensils, color: 'bg-orange-100 text-orange-600 dark:bg-orange-500/20 dark:text-orange-400' },
-  { id: 'culture', label: 'Cultural Tours', icon: Map, color: 'bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400' },
-  { id: 'nightlife', label: 'Nightlife', icon: Music, color: 'bg-purple-100 text-purple-600 dark:bg-purple-500/20 dark:text-purple-400' },
-  { id: 'events', label: 'Events', icon: CalendarDays, color: 'bg-blue-100 text-blue-600 dark:bg-blue-500/20 dark:text-blue-400' },
-  { id: 'community', label: 'Community', icon: Users, color: 'bg-rose-100 text-rose-600 dark:bg-rose-500/20 dark:text-rose-400' },
+  { id: 'cloud', label: 'Cloud Engineering', icon: Utensils, color: 'bg-orange-100 text-orange-600 dark:bg-orange-500/20 dark:text-orange-400' },
+  { id: 'security', label: 'Cybersecurity', icon: Map, color: 'bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400' },
+  { id: 'devops', label: 'DevOps', icon: Music, color: 'bg-purple-100 text-purple-600 dark:bg-purple-500/20 dark:text-purple-400' },
+  { id: 'conferences', label: 'Conferences', icon: CalendarDays, color: 'bg-blue-100 text-blue-600 dark:bg-blue-500/20 dark:text-blue-400' },
+  { id: 'networking', label: 'Networking', icon: Users, color: 'bg-rose-100 text-rose-600 dark:bg-rose-500/20 dark:text-rose-400' },
 ];
 
 export default function CategoryGrid({ className }: { className?: string }) {
@@ -16,10 +16,10 @@ export default function CategoryGrid({ className }: { className?: string }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight">
-              Explore by Category
+              Explore by Track
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl">
-              Find exactly what you're looking for, from culinary masterclasses to vibrant nightlife.
+              Find sessions by track — cloud engineering, security, devops, and more.
             </p>
           </div>
         </div>

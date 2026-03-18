@@ -12,11 +12,11 @@ export default function Footer({ className }: { className?: string }) {
             <Link to="/" className="flex items-center gap-2 group">
               <Logo className="w-10 h-10 group-hover:opacity-90 transition-opacity" />
               <span className="font-bold text-2xl tracking-tight text-white">
-                Afro Travel
+                AfriNex
               </span>
             </Link>
             <p className="text-neutral-400 leading-relaxed font-light">
-              Curating premium, Afro-centric cultural experiences across Europe. Discover your next adventure with us.
+              Connecting IT professionals with conferences, workshops, and cloud engineering events across Europe.
             </p>
             <div className="flex items-center gap-4 mt-4">
               <a href="#" className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all">
@@ -36,10 +36,10 @@ export default function Footer({ className }: { className?: string }) {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold text-lg mb-4 tracking-wide uppercase">Explore</h4>
-            <a href="/#featured-destinations" className="hover:text-amber-500 transition-colors">Destinations</a>
-            <Link to="/experiences" className="hover:text-amber-500 transition-colors">Experiences</Link>
-            <Link to="/events" className="hover:text-amber-500 transition-colors">Events</Link>
-            <Link to="/tours" className="hover:text-amber-500 transition-colors">Tours</Link>
+            <a href="/#featured-destinations" className="hover:text-amber-500 transition-colors">Hubs</a>
+            <Link to="/experiences" className="hover:text-amber-500 transition-colors">Sessions</Link>
+            <Link to="/events" className="hover:text-amber-500 transition-colors">Conferences</Link>
+            <Link to="/tours" className="hover:text-amber-500 transition-colors">Workshops</Link>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -53,7 +53,7 @@ export default function Footer({ className }: { className?: string }) {
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold text-lg mb-4 tracking-wide uppercase">Newsletter</h4>
             <p className="text-neutral-400 mb-4 font-light">
-              Subscribe to get the latest updates on new experiences and exclusive offers.
+              Subscribe to get the latest updates on upcoming conferences, sessions, and speaker announcements.
             </p>
             <form className="flex gap-2">
               <input
@@ -72,7 +72,7 @@ export default function Footer({ className }: { className?: string }) {
         </div>
 
         <div className="pt-8 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-light">
-          <p>&copy; {new Date().getFullYear()} Afro Travel Europe. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Tech Driven Co-relations. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link to="/privacy" className="hover:text-amber-500 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-amber-500 transition-colors">Terms of Service</Link>

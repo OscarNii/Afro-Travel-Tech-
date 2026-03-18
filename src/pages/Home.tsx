@@ -22,17 +22,17 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight leading-tight">
-                Trending Experiences
+                Featured Sessions
               </h2>
               <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light">
-                Discover the most sought-after cultural events and activities happening right now.
+                Discover the most relevant talks, workshops, and cloud labs happening right now.
               </p>
             </div>
             <Link 
               to="/explore"
               className="flex items-center gap-2 text-amber-600 dark:text-amber-500 font-semibold hover:text-amber-700 dark:hover:text-amber-400 transition-colors group whitespace-nowrap"
             >
-              View all experiences
+              View all sessions
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -56,10 +56,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight leading-tight">
-                Recommended for You
+                Recommended Tracks
               </h2>
               <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light">
-                Curated selections based on your interests and past bookings.
+                Curated sessions and workshops based on your interests in IT, cloud, and security.
               </p>
             </div>
           </div>

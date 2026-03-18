@@ -26,7 +26,7 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="afro-travel-theme">
+    <ThemeProvider defaultTheme="system" storageKey="tech-driven-theme">
       <Router>
         <div className="flex flex-col min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 transition-colors duration-300">
           <Navbar />

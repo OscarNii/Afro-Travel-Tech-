@@ -10,7 +10,7 @@ const allExperiences = [...trendingExperiences, ...recommendedExperiences];
 export default function Explore() {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const categories = ['All', 'Events', 'Nightlife', 'Food', 'Culture', 'Tours'];
+  const categories = ['All', 'Keynotes', 'Workshops', 'Panels', 'Networking', 'Cloud Labs'];
 
   const filteredExperiences = activeCategory === 'All' 
     ? allExperiences 
@@ -22,10 +22,10 @@ export default function Explore() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight">
-            Explore Experiences
+            Explore Sessions
           </h1>
           <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light max-w-2xl mb-12">
-            Discover the best Afro-centric events, tours, and culinary experiences across Europe.
+            Discover top tech talks, hands-on workshops, panels, and cloud labs from leading practitioners.
           </p>
           
           <div className="bg-white dark:bg-neutral-900 p-4 rounded-3xl shadow-sm border border-neutral-100 dark:border-neutral-800 mb-12">
@@ -65,7 +65,7 @@ export default function Explore() {
         {filteredExperiences.length === 0 && (
           <div className="text-center py-24">
             <Filter className="w-12 h-12 text-neutral-300 dark:text-neutral-700 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-2">No experiences found</h3>
+            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-2">No sessions found</h3>
             <p className="text-neutral-500 dark:text-neutral-400">Try adjusting your filters or search criteria.</p>
           </div>
         )}

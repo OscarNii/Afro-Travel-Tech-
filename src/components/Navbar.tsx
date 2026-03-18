@@ -46,7 +46,7 @@ export default function Navbar() {
             "font-semibold text-xl tracking-tight transition-colors",
             isScrolled ? "text-neutral-900 dark:text-white" : "text-white drop-shadow-md"
           )}>
-            Afro Travel Europe
+            AfriNex
           </span>
         </Link>
 
@@ -55,15 +55,15 @@ export default function Navbar() {
           <Link to="/explore" className={cn(
             "text-sm font-medium transition-colors hover:text-amber-500",
             isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>Explore</Link>
+          )}>Sessions</Link>
           <a href="/#featured-destinations" className={cn(
             "text-sm font-medium transition-colors hover:text-amber-500",
             isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>Featured Destinations</a>
+          )}>Featured Hubs</a>
           <Link to="/explore" className={cn(
             "text-sm font-medium transition-colors hover:text-amber-500",
             isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>View all experiences</Link>
+          )}>View all sessions</Link>
           
           <button 
             onClick={toggleTheme}
@@ -86,7 +86,7 @@ export default function Navbar() {
             href="#contact"
             className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg shadow-amber-600/20 hover:shadow-amber-600/40"
           >
-            Contact
+            Partners
           </a>
         </div>
 
@@ -125,15 +125,15 @@ export default function Navbar() {
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-neutral-950 shadow-xl border-t border-neutral-100 dark:border-neutral-800 flex flex-col p-6 gap-4">
-          <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Explore</Link>
-          <a href="/#featured-destinations" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Featured Destinations</a>
-          <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>View all experiences</Link>
+          <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Sessions</Link>
+          <a href="/#featured-destinations" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Featured Hubs</a>
+          <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>View all sessions</Link>
           <a 
             href="#contact"
             className="bg-amber-600 text-white px-6 py-3 rounded-xl text-base font-medium mt-4 text-center"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Contact
+            Partners
           </a>
         </div>
       )}
