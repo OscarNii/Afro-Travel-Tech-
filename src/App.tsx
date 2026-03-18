@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Explore from './pages/Explore';
 import { ThemeProvider } from './components/ThemeProvider';
 
+
 function AppRoutes() {
   const location = useLocation();
   
