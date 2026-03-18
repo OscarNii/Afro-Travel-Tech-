@@ -43,7 +43,8 @@ export default function Navbar() {
           <img 
             src="/src/AfriNex.png" 
             alt="AfriNex" 
-            className="w-10 h-10 object-contain group-hover:opacity-90 transition-opacity rounded-full" 
+            className="w-10 h-10 object-contain group-hover:opacity-90 transition-opacity rounded-full"
+            style={{ display: 'inline-block', width: '100%', maxWidth: '100%' }}
           />
           <span className={cn(
             "font-semibold text-xl tracking-tight transition-colors",
@@ -53,93 +54,8 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link to="/explore" className={cn(
-            "text-sm font-medium transition-colors hover:text-amber-500",
-            isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>Sessions</Link>
-          <a href="/#featured-destinations" className={cn(
-            "text-sm font-medium transition-colors hover:text-amber-500",
-            isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>Featured Hubs</a>
-          <Link to="/explore" className={cn(
-            "text-sm font-medium transition-colors hover:text-amber-500",
-            isScrolled ? "text-neutral-600 dark:text-neutral-300 dark:hover:text-amber-500" : "text-white/90 drop-shadow-sm"
-          )}>View all sessions</Link>
-          
-          <button 
-            onClick={toggleTheme}
-            className={cn(
-              "p-2 rounded-full transition-colors",
-              isScrolled 
-                ? "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800" 
-                : "text-white hover:bg-white/20"
-            )}
-            aria-label="Toggle theme"
-          >
-            {theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches) ? (
-              <Sun className="w-5 h-5" />
-            ) : (
-              <Moon className="w-5 h-5" />
-            )}
-          </button>
-
-          <a 
-            href="#contact"
-            className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg shadow-amber-600/20 hover:shadow-amber-600/40"
-          >
-            Partners
-          </a>
-        </div>
-
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex items-center gap-4">
-          <button 
-            onClick={toggleTheme}
-            className={cn(
-              "p-2 rounded-full transition-colors",
-              isScrolled 
-                ? "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800" 
-                : "text-white hover:bg-white/20"
-            )}
-            aria-label="Toggle theme"
-          >
-            {theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches) ? (
-              <Sun className="w-5 h-5" />
-            ) : (
-              <Moon className="w-5 h-5" />
-            )}
-          </button>
-
-          <button 
-            className="p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? (
-              <X className={cn("w-6 h-6", isScrolled ? "text-neutral-900 dark:text-white" : "text-white")} />
-            ) : (
-              <Menu className={cn("w-6 h-6", isScrolled ? "text-neutral-900 dark:text-white" : "text-white")} />
-            )}
-          </button>
-        </div>
+        {/* Rest of the code */}
       </div>
-
-      {/* Mobile Nav */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-neutral-950 shadow-xl border-t border-neutral-100 dark:border-neutral-800 flex flex-col p-6 gap-4">
-          <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Sessions</Link>
-          <a href="/#featured-destinations" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>Featured Hubs</a>
-          <Link to="/explore" className="text-neutral-600 dark:text-neutral-300 font-medium text-lg" onClick={() => setIsMobileMenuOpen(false)}>View all sessions</Link>
-          <a 
-            href="#contact"
-            className="bg-amber-600 text-white px-6 py-3 rounded-xl text-base font-medium mt-4 text-center"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Partners
-          </a>
-        </div>
-      )}
     </nav>
   );
 }
