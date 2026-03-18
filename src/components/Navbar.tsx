@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { useTheme } from './ThemeProvider';
-import Logo from './Logo';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,7 +40,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <Logo className="w-10 h-10 group-hover:opacity-90 transition-opacity" />
+          <img 
+            src="/src/AfriNex.png" 
+            alt="AfriNex" 
+            className="w-10 h-10 object-contain group-hover:opacity-90 transition-opacity rounded-full" 
+          />
           <span className={cn(
             "font-semibold text-xl tracking-tight transition-colors",
             isScrolled ? "text-neutral-900 dark:text-white" : "text-white drop-shadow-md"
