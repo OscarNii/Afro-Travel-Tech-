@@ -1,6 +1,7 @@
 import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '../lib/utils';
+import logo from '../AfriNex.png';
 
 export default function Footer({ className }: { className?: string }) {
   return (
@@ -10,7 +11,7 @@ export default function Footer({ className }: { className?: string }) {
           <div className="flex flex-col gap-6">
             <Link to="/" className="flex items-center gap-2 group">
               <img 
-                src="/src/AfriNex.png" 
+                src={logo} 
                 alt="AfriNex" 
                 className="w-10 h-10 object-contain group-hover:opacity-90 transition-opacity rounded-full" 
               />

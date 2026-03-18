@@ -1,6 +1,6 @@
-# Task Progress: Replace icons in Explore by Track cards
+# Logo Fix Progress
 
-## Plan Steps:
-- [x] Update src/components/CategoryGrid.tsx with new icons
-- [x] Test changes with `npm run dev`
-- [x] Verify on Explore page
+- [x] Update src/components/Navbar.tsx (import logo, fix src)
+- [x] Update src/components/Footer.tsx (import logo, fix src)
+- [x] Add src/vite-env.d.ts for TS image types
+- [ ] Test with `npm run dev`
