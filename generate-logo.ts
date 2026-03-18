@@ -27,19 +27,30 @@ async function generateLogo() {
         }
       },
     });
+    const candidate = response?.candidates?.[0];
+    if (!candidate) {
+      console.error('No candidates returned from the model response.');
+      return;
+    }
 
-    for (const part of response.candidates[0].content.parts) {
-      if (part.inlineData) {
-        const base64EncodeString = part.inlineData.data;
-        const buffer = Buffer.from(base64EncodeString, 'base64');
-        const publicDir = path.join(process.cwd(), 'public');
-        if (!fs.existsSync(publicDir)) {
-          fs.mkdirSync(publicDir);
-        }
-        fs.writeFileSync(path.join(publicDir, 'logo.png'), buffer);
-        console.log('Logo generated successfully!');
-        break;
+    const parts = candidate.content?.parts;
+    if (!Array.isArray(parts) || parts.length === 0) {
+      console.error('No content parts found in candidate.');
+      return;
+    }
+
+    for (const part of parts) {
+      const base64EncodeString = part?.inlineData?.data;
+      if (!base64EncodeString || typeof base64EncodeString !== 'string') continue;
+
+      const buffer = Buffer.from(base64EncodeString, 'base64');
+      const publicDir = path.join(process.cwd(), 'public');
+      if (!fs.existsSync(publicDir)) {
+        fs.mkdirSync(publicDir);
       }
+      fs.writeFileSync(path.join(publicDir, 'logo.png'), buffer);
+      console.log('Logo generated successfully!');
+      break;
     }
   } catch (error) {
     console.error('Error generating logo:', error);

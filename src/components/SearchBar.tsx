@@ -7,6 +7,10 @@ export default function SearchBar({ className }: { className?: string }) {
   const [date, setDate] = useState('');
   const [category, setCategory] = useState('');
 
+  // The component has been "muted" and will not render anything.
+  return null;
+
+  /* eslint-disable no-unreachable */
   return (
     <div className={cn(
       "bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl rounded-full shadow-2xl p-2 flex flex-col md:flex-row items-center gap-2 md:gap-4 border border-white/20 dark:border-neutral-800",
