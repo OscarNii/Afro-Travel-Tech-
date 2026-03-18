@@ -1,10 +1,10 @@
-import { Music, Utensils, Map, Users, CalendarDays } from 'lucide-react';
+import { Music, Utensils, Map, Users, CalendarDays, Cloud, Shield, Server } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const categories = [
-  { id: 'cloud', label: 'Cloud Engineering', icon: Utensils, color: 'bg-orange-100 text-orange-600 dark:bg-orange-500/20 dark:text-orange-400' },
-  { id: 'security', label: 'Cybersecurity', icon: Map, color: 'bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400' },
-  { id: 'devops', label: 'DevOps', icon: Music, color: 'bg-purple-100 text-purple-600 dark:bg-purple-500/20 dark:text-purple-400' },
+  { id: 'cloud', label: 'Cloud Engineering', icon: Cloud, color: 'bg-orange-100 text-orange-600 dark:bg-orange-500/20 dark:text-orange-400' },
+  { id: 'security', label: 'Cybersecurity', icon: Shield, color: 'bg-emerald-100 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400' },
+  { id: 'devops', label: 'DevOps', icon: Server, color: 'bg-purple-100 text-purple-600 dark:bg-purple-500/20 dark:text-purple-400' },
   { id: 'conferences', label: 'Conferences', icon: CalendarDays, color: 'bg-blue-100 text-blue-600 dark:bg-blue-500/20 dark:text-blue-400' },
   { id: 'networking', label: 'Networking', icon: Users, color: 'bg-rose-100 text-rose-600 dark:bg-rose-500/20 dark:text-rose-400' },
 ];

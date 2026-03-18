@@ -1,8 +1,6 @@
-# Task: Add background image to "Ready to advance your tech career?" card
+# Task Progress: Replace icons in Explore by Track cards
 
-## Plan Steps
-- [x] Understand files (Hero.tsx, Home.tsx, CTASection.tsx read)
-- [x] Brainstorm and confirm plan with user
-- [x] Edit src/components/CTASection.tsx (update image + styling)
-- [x] Test changes (run dev server at http://localhost:3000; fixed visibility: opacity-50, lighter gradient, no mix-blend – verify CTA section at home page bottom)
-- [x] Complete task
+## Plan Steps:
+- [x] Update src/components/CategoryGrid.tsx with new icons
+- [x] Test changes with `npm run dev`
+- [x] Verify on Explore page
