@@ -3,7 +3,7 @@ import { cn } from '../lib/utils';
 
 export default function CTASection({ className }: { className?: string }) {
   return (
-    <section className={cn("py-24 bg-white", className)}>
+    <section className={cn("py-24 bg-white dark:bg-neutral-950", className)}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="relative rounded-[2.5rem] overflow-hidden bg-neutral-900 shadow-2xl">
           {/* Background Image */}

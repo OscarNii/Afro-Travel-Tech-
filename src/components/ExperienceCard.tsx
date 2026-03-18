@@ -11,7 +11,7 @@ interface ExperienceCardProps {
 
 export default function ExperienceCard({ experience, className }: ExperienceCardProps) {
   return (
-    <div className={cn("group relative flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-neutral-100", className)}>
+    <div className={cn("group relative flex flex-col bg-white dark:bg-neutral-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-neutral-100 dark:border-neutral-800", className)}>
       {/* Image Container */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <img 
@@ -35,26 +35,26 @@ export default function ExperienceCard({ experience, className }: ExperienceCard
       {/* Content */}
       <div className="p-5 flex flex-col flex-1">
         <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-1 text-neutral-500 text-sm font-medium">
+          <div className="flex items-center gap-1 text-neutral-500 dark:text-neutral-400 text-sm font-medium">
             <MapPin className="w-4 h-4 text-amber-600" />
             {experience.location}
           </div>
-          <div className="flex items-center gap-1 text-sm font-semibold text-neutral-900">
+          <div className="flex items-center gap-1 text-sm font-semibold text-neutral-900 dark:text-white">
             <Star className="w-4 h-4 fill-amber-500 text-amber-500" />
-            {experience.rating} <span className="text-neutral-400 font-normal">({experience.reviews})</span>
+            {experience.rating} <span className="text-neutral-400 dark:text-neutral-500 font-normal">({experience.reviews})</span>
           </div>
         </div>
 
-        <h3 className="text-lg font-bold text-neutral-900 leading-tight mb-4 group-hover:text-amber-600 transition-colors line-clamp-2">
+        <h3 className="text-lg font-bold text-neutral-900 dark:text-white leading-tight mb-4 group-hover:text-amber-600 dark:group-hover:text-amber-500 transition-colors line-clamp-2">
           {experience.title}
         </h3>
 
-        <div className="mt-auto pt-4 border-t border-neutral-100 flex items-center justify-between">
+        <div className="mt-auto pt-4 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between">
           <div className="flex flex-col">
-            <span className="text-xs text-neutral-500 font-medium uppercase tracking-wider">From</span>
-            <span className="text-lg font-bold text-neutral-900">€{experience.price}</span>
+            <span className="text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wider">From</span>
+            <span className="text-lg font-bold text-neutral-900 dark:text-white">€{experience.price}</span>
           </div>
-          <button className="text-sm font-semibold text-amber-600 hover:text-amber-700 bg-amber-50 hover:bg-amber-100 px-4 py-2 rounded-full transition-colors">
+          <button className="text-sm font-semibold text-amber-600 dark:text-amber-500 hover:text-amber-700 dark:hover:text-amber-400 bg-amber-50 dark:bg-amber-500/10 hover:bg-amber-100 dark:hover:bg-amber-500/20 px-4 py-2 rounded-full transition-colors">
             Book Now
           </button>
         </div>

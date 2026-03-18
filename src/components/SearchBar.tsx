@@ -9,33 +9,33 @@ export default function SearchBar({ className }: { className?: string }) {
 
   return (
     <div className={cn(
-      "bg-white/90 backdrop-blur-xl rounded-full shadow-2xl p-2 flex flex-col md:flex-row items-center gap-2 md:gap-4 border border-white/20",
+      "bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl rounded-full shadow-2xl p-2 flex flex-col md:flex-row items-center gap-2 md:gap-4 border border-white/20 dark:border-neutral-800",
       className
     )}>
-      <div className="flex-1 flex items-center gap-3 px-4 py-3 md:py-2 w-full md:w-auto border-b md:border-b-0 md:border-r border-neutral-200">
+      <div className="flex-1 flex items-center gap-3 px-4 py-3 md:py-2 w-full md:w-auto border-b md:border-b-0 md:border-r border-neutral-200 dark:border-neutral-800">
         <MapPin className="w-5 h-5 text-amber-600 shrink-0" />
         <div className="flex flex-col w-full">
-          <label className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">Location</label>
+          <label className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Location</label>
           <input 
             type="text" 
             placeholder="Where to?" 
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            className="bg-transparent border-none outline-none text-neutral-900 placeholder:text-neutral-400 font-medium w-full"
+            className="bg-transparent border-none outline-none text-neutral-900 dark:text-white placeholder:text-neutral-400 dark:placeholder:text-neutral-500 font-medium w-full"
           />
         </div>
       </div>
 
-      <div className="flex-1 flex items-center gap-3 px-4 py-3 md:py-2 w-full md:w-auto border-b md:border-b-0 md:border-r border-neutral-200">
+      <div className="flex-1 flex items-center gap-3 px-4 py-3 md:py-2 w-full md:w-auto border-b md:border-b-0 md:border-r border-neutral-200 dark:border-neutral-800">
         <Calendar className="w-5 h-5 text-amber-600 shrink-0" />
         <div className="flex flex-col w-full">
-          <label className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">Date</label>
+          <label className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Date</label>
           <input 
             type="text" 
             placeholder="Add dates" 
             value={date}
             onChange={(e) => setDate(e.target.value)}
-            className="bg-transparent border-none outline-none text-neutral-900 placeholder:text-neutral-400 font-medium w-full"
+            className="bg-transparent border-none outline-none text-neutral-900 dark:text-white placeholder:text-neutral-400 dark:placeholder:text-neutral-500 font-medium w-full"
           />
         </div>
       </div>
@@ -43,17 +43,17 @@ export default function SearchBar({ className }: { className?: string }) {
       <div className="flex-1 flex items-center gap-3 px-4 py-3 md:py-2 w-full md:w-auto">
         <Activity className="w-5 h-5 text-amber-600 shrink-0" />
         <div className="flex flex-col w-full">
-          <label className="text-xs font-semibold text-neutral-500 uppercase tracking-wider">Category</label>
+          <label className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">Category</label>
           <select 
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="bg-transparent border-none outline-none text-neutral-900 font-medium w-full appearance-none"
+            className="bg-transparent border-none outline-none text-neutral-900 dark:text-white font-medium w-full appearance-none"
           >
-            <option value="" disabled>Select type</option>
-            <option value="events">Events</option>
-            <option value="nightlife">Nightlife</option>
-            <option value="tours">Cultural Tours</option>
-            <option value="food">Food & Dining</option>
+            <option value="" disabled className="dark:bg-neutral-900">Select type</option>
+            <option value="events" className="dark:bg-neutral-900">Events</option>
+            <option value="nightlife" className="dark:bg-neutral-900">Nightlife</option>
+            <option value="tours" className="dark:bg-neutral-900">Cultural Tours</option>
+            <option value="food" className="dark:bg-neutral-900">Food & Dining</option>
           </select>
         </div>
       </div>

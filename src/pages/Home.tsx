@@ -10,24 +10,24 @@ import { trendingExperiences, recommendedExperiences } from '../lib/data';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-neutral-50">
+    <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
       <Hero />
       
       {/* Trending Experiences */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-neutral-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 tracking-tight leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight leading-tight">
                 Trending Experiences
               </h2>
-              <p className="text-xl text-neutral-600 font-light">
+              <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light">
                 Discover the most sought-after cultural events and activities happening right now.
               </p>
             </div>
             <Link 
               to="/explore"
-              className="flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 transition-colors group whitespace-nowrap"
+              className="flex items-center gap-2 text-amber-600 dark:text-amber-500 font-semibold hover:text-amber-700 dark:hover:text-amber-400 transition-colors group whitespace-nowrap"
             >
               View all experiences
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -48,14 +48,14 @@ export default function Home() {
       <FeaturedCities />
 
       {/* Personalized Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-neutral-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 tracking-tight leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight leading-tight">
                 Recommended for You
               </h2>
-              <p className="text-xl text-neutral-600 font-light">
+              <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light">
                 Curated selections based on your interests and past bookings.
               </p>
             </div>

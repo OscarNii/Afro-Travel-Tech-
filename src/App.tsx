@@ -8,20 +8,23 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Explore from './pages/Explore';
+import { ThemeProvider } from './components/ThemeProvider';
 
 export default function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <div className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/explore" element={<Explore />} />
-          </Routes>
+    <ThemeProvider defaultTheme="system" storageKey="afro-travel-theme">
+      <Router>
+        <div className="flex flex-col min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 transition-colors duration-300">
+          <Navbar />
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/explore" element={<Explore />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 }
