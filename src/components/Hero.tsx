@@ -37,7 +37,7 @@ export default function Hero() {
       ))}
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/60 via-neutral-900/40 to-neutral-900/80 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-linear-to-b from-neutral-900/60 via-neutral-900/40 to-neutral-900/80 backdrop-blur-[2px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full flex flex-col items-center text-center mt-20">
         <span className="inline-block py-1 px-3 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-300 text-sm font-semibold tracking-wider uppercase mb-6 backdrop-blur-md">

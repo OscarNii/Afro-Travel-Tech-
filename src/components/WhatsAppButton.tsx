@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
       className={`
         fixed bottom-6 left-6 z-60 w-14 h-14 md:w-16 md:h-16 rounded-full 
         shadow-2xl hover:shadow-amber-500/25 transition-all duration-300
-        bg-gradient-to-r from-emerald-500 to-emerald-600 
+        bg-linear-to-r from-emerald-500 to-emerald-600 
         dark:from-emerald-400 dark:to-emerald-500
         hover:from-emerald-600 hover:to-emerald-700 dark:hover:from-emerald-500 dark:hover:to-emerald-600
         hover:scale-110 hover:-translate-y-1 active:scale-95

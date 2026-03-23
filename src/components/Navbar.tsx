@@ -46,7 +46,7 @@ export default function Navbar() {
             alt="AfriNex" 
             className="h-10 w-10 group-hover:scale-110 transition-transform duration-200"
           />
-          <span className="font-bold text-xl bg-gradient-to-r from-neutral-900 to-neutral-600 dark:from-neutral-100 dark:to-neutral-400 bg-clip-text text-transparent">
+          <span className="font-bold text-xl bg-linear-to-r from-neutral-900 to-neutral-600 dark:from-neutral-100 dark:to-neutral-400 bg-clip-text text-transparent">
             AfriNex
           </span>
         </Link>

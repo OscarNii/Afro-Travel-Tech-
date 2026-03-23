@@ -13,7 +13,7 @@ export default function CTASection({ className }: { className?: string }) {
               alt="Tech Career"
               className="w-full h-full object-cover opacity-50 scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/80 via-neutral-900/50 to-neutral-900/20" />
+            <div className="absolute inset-0 bg-linear-to-r from-neutral-900/80 via-neutral-900/50 to-neutral-900/20" />
           </div>
 
           <div className="relative z-10 p-12 md:p-24 max-w-3xl flex flex-col items-start">
