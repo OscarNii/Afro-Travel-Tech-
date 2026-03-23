@@ -14,16 +14,20 @@ export default function ContactSection({ className }: { className?: string }) {
     setLoading(true);
     try {
       const formData = new FormData(formRef.current!);
-      const messageData = {
-        firstName: formData.get('firstName'),
-        lastName: formData.get('lastName'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message'),
-      };
-      console.log('Contact form submitted:', messageData);
-      setSuccess(true);
-      formRef.current?.reset();
+      const response = await fetch('https://formspree.io/f/xyknqlbj', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        formRef.current?.reset();
+      } else {
+        throw new Error('Submission failed');
+      }
     } catch (error) {
       console.error('Error:', error);
     } finally {
