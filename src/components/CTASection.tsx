@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { cn } from '../lib/utils';
 
 export default function CTASection({ className }: { className?: string }) {
@@ -27,9 +28,12 @@ export default function CTASection({ className }: { className?: string }) {
               Join innovators in cloud engineering, cybersecurity, and DevOps—learn from experts and build connections.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-xl shadow-amber-600/20 hover:shadow-amber-600/40 hover:-translate-y-1">
+              <Link 
+                to="/contact"
+                className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-xl shadow-amber-600/20 hover:shadow-amber-600/40 hover:-translate-y-1"
+              >
                 Register Now <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
               <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 hover:-translate-y-1">
                 Sponsor or Speak
               </button>
