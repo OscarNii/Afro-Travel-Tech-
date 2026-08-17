@@ -24,7 +24,7 @@ export const trendingExperiences: Experience[] = [
   {
     id: '3',
     title: 'Cybersecurity Panel: Threats & Defenses',
-    location: 'Berlin, Germany',
+    location: 'Dortmund, Germany',
     // price: 30,
     rating: 5.0,
     reviews: 215,
@@ -34,7 +34,7 @@ export const trendingExperiences: Experience[] = [
   {
     id: '4',
     title: 'Cloud Labs: Hands-on Kubernetes',
-    location: 'Amsterdam, Netherlands',
+    location: 'Rotterdam, Netherlands',
     // price: 60,
     rating: 4.7,
     reviews: 82,
@@ -131,13 +131,13 @@ export const featuredCities: City[] = [
   },
   {
     id: 'c3',
-    name: 'Berlin',
+    name: 'Dortmund',
     image: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&q=80&w=800',
     experienceCount: 64,
   },
   {
     id: 'c4',
-    name: 'Amsterdam',
+    name: 'Rotterdam',
     image: 'https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?auto=format&fit=crop&q=80&w=800',
     experienceCount: 53,
   },

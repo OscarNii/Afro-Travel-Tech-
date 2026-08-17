@@ -20,7 +20,7 @@ export default function Footer({ className }: { className?: string }) {
               </span>
             </Link>
             <p className="text-neutral-400 leading-relaxed font-light">
-              Connecting IT professionals with conferences, workshops, and cloud engineering events across Europe.
+              Connecting IT professionals with Conferences, Workshops, and Cloud Engineering events across Europe.
             </p>
             <div className="flex items-center gap-4 mt-4">
               <a href="#" className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-amber-600 hover:text-white transition-all">
@@ -41,23 +41,23 @@ export default function Footer({ className }: { className?: string }) {
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold text-lg mb-4 tracking-wide uppercase">Explore</h4>
             <a href="/#featured-destinations" className="hover:text-amber-500 transition-colors">Hubs</a>
-            <Link to="/experiences" className="hover:text-amber-500 transition-colors">Sessions</Link>
-            <Link to="/events" className="hover:text-amber-500 transition-colors">Conferences</Link>
-            <Link to="/tours" className="hover:text-amber-500 transition-colors">Workshops</Link>
+            <Link to="#" className="hover:text-amber-500 transition-colors">Sessions</Link>
+            <Link to="/explore" className="hover:text-amber-500 transition-colors">Conferences</Link>
+            <Link to="#" className="hover:text-amber-500 transition-colors">Workshops</Link>
           </div>
 
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold text-lg mb-4 tracking-wide uppercase">Company</h4>
-            <Link to="/about" className="hover:text-amber-500 transition-colors">About Us</Link>
-            <Link to="/careers" className="hover:text-amber-500 transition-colors">Careers</Link>
-            <Link to="/press" className="hover:text-amber-500 transition-colors">Press</Link>
+            <Link to="#" className="hover:text-amber-500 transition-colors">About Us</Link>
+            <Link to="#" className="hover:text-amber-500 transition-colors">Careers</Link>
+            <Link to="#" className="hover:text-amber-500 transition-colors">Press</Link>
             <Link to="/contact" className="hover:text-amber-500 transition-colors">Contact</Link>
           </div>
 
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-bold text-lg mb-4 tracking-wide uppercase">Newsletter</h4>
             <p className="text-neutral-400 mb-4 font-light">
-              Subscribe to get the latest updates on upcoming conferences, sessions, and speaker announcements.
+              Subscribe to get the latest updates on upcoming conferences, sessions, and speaker announcements from AfriNex.
             </p>
             <form className="flex gap-2">
               <input

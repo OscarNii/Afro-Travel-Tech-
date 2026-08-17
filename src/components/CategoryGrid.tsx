@@ -16,7 +16,7 @@ export default function CategoryGrid({ className }: { className?: string }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight">
-              Explore by Track
+              Explore by Session Track
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl">
               Find sessions by track — cloud engineering, security, devops, and more.
