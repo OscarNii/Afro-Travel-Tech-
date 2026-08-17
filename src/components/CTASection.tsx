@@ -25,7 +25,7 @@ export default function CTASection({ className }: { className?: string }) {
               Ready to advance your tech career?
             </h2>
             <p className="text-xl text-neutral-300 mb-12 font-light max-w-xl leading-relaxed">
-              Join innovators in cloud engineering, cybersecurity, and DevOps—learn from experts and build connections.
+              Join innovators in Cloud Engineering, Cybersecurity, and DevOps—learn from experts and build connections.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Link 

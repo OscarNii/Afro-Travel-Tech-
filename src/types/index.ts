@@ -2,7 +2,7 @@ export interface Experience {
   id: string;
   title: string;
   location: string;
-  price: number;
+  // price: number;
   rating: number;
   reviews: number;
   tag: string;

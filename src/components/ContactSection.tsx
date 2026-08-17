@@ -45,7 +45,7 @@ export default function ContactSection({ className }: { className?: string }) {
               Contact & Partnerships
             </h2>
             <p className="text-xl text-neutral-600 dark:text-neutral-400 font-light mb-12 max-w-lg">
-              Questions about speaking, sponsoring, or partnering? Reach out to our team.
+              Questions about speaking, sponsoring, or partnering? Reach out to our AfriNex.
             </p>
 
             <div className="space-y-8">
@@ -55,8 +55,8 @@ export default function ContactSection({ className }: { className?: string }) {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-neutral-900 dark:text-white mb-1">Email Us</h4>
-                  <p className="text-neutral-600 dark:text-neutral-400">info@techdrivencorelations.com</p>
-                  <p className="text-neutral-600 dark:text-neutral-400">partnerships@techdrivencorelations.com</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">info@afrinex.de</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">partnerships@afrinex.de</p>
                 </div>
               </div>
 
@@ -66,8 +66,8 @@ export default function ContactSection({ className }: { className?: string }) {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-neutral-900 dark:text-white mb-1">Call Us</h4>
-                  <p className="text-neutral-600 dark:text-neutral-400">+44 20 7123 4567</p>
-                  <p className="text-neutral-600 dark:text-neutral-400">Mon-Fri, 9am-6pm GMT</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">+31629532653</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">Mon-Fri, 9am-6pm CT</p>
                 </div>
               </div>
 
@@ -78,7 +78,7 @@ export default function ContactSection({ className }: { className?: string }) {
                 <div>
                   <h4 className="text-lg font-semibold text-neutral-900 dark:text-white mb-1">Visit Us</h4>
                   <p className="text-neutral-600 dark:text-neutral-400">124 Cultural Hub Street</p>
-                  <p className="text-neutral-600 dark:text-neutral-400">London, UK EC1A 1BB</p>
+                  <p className="text-neutral-600 dark:text-neutral-400">Herten, Germany EC1A 1BB</p>
                 </div>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { MessageCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const WHATSAPP_PHONE = '+31629532653';
-const WHATSAPP_MESSAGE = 'Thank you for contacting AfriNex, How can we help you';
+const WHATSAPP_MESSAGE = 'AfriNex appreciate your message, How can we help today?';
 
 export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
